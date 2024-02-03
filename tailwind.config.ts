@@ -1,15 +1,15 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-	// images: {
-	// 	remotePatterns: [
-	// 		{
-	// 			protocol: "https",
-	// 			hostname: "www.drug-international.com",
-	// 			port: "",
-	// 			pathname: "/uploads/**",
-	// 		},
-	// 	],
-	// },
-};
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
 
-module.exports = nextConfig;
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
